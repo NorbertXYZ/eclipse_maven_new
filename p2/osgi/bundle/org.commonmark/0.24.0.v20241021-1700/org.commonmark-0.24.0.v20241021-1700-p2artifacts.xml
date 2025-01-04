@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.commonmark' version='0.24.0.v20241021-1700'>
+    <properties size='7'>
+      <property name='maven-wrapped-groupId' value='org.commonmark'/>
+      <property name='maven-wrapped-artifactId' value='commonmark'/>
+      <property name='maven-wrapped-version' value='0.24.0'/>
+      <property name='download.size' value='240941'/>
+      <property name='artifact.size' value='240941'/>
+      <property name='download.checksum.sha-512' value='f271bc47272269d0d2d26f6495b068f5a3657b69c53d628cc0d0beca3f141f9d14a55bf4a7c0c716f1398c0cffdfffc065ecc40468765226e6f9437c943dc38f'/>
+      <property name='download.checksum.sha-256' value='f0419c1490270b2617f56ef254cb6418540a0088f7cc4e8687eb3df618558848'/>
+    </properties>
+  </artifact>
+</artifacts>

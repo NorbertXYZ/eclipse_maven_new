@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Dec 05 10:20:57 CET 2024
+sshd-osgi-2.14.0.jar>central=
+sshd-osgi-2.14.0.pom>central=
+sshd-osgi-2.14.0-sources.jar>central=

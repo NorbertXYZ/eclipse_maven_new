@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.commonmark.source' version='0.24.0.v20241021-1700'>
+    <properties size='10'>
+      <property name='maven-groupId' value='org.commonmark'/>
+      <property name='maven-artifactId' value='commonmark'/>
+      <property name='maven-version' value='0.24.0'/>
+      <property name='maven-classifier' value='sources'/>
+      <property name='maven-repository' value='eclipse.maven.central.mirror'/>
+      <property name='maven-type' value='jar'/>
+      <property name='download.size' value='160472'/>
+      <property name='artifact.size' value='160472'/>
+      <property name='download.checksum.sha-512' value='82b81af4a18fe722b2277c236628a14b4a3c909c0711674996dd6ffd215c3dddd93e0aee04b359cf5e66011f4fad90b8588115fbb8648d6017d8bf7f42d27070'/>
+      <property name='download.checksum.sha-256' value='5375213ae36dc05f535a7a24036d51ce73d1718c5185eb7934336b3b2b502e76'/>
+    </properties>
+  </artifact>
+</artifacts>

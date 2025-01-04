@@ -1,0 +1,21 @@
+#Thu Dec 05 10:10:07 CET 2024
+date=Thu, 05 Dec 2024 09\:10\:07 GMT
+content-length=21186
+server=cloudflare
+expires=Thu, 05 Dec 2024 21\:10\:07 GMT
+cf-ray=8ed2e6b8c898a28c-YUL
+vary=Accept-Encoding
+cf-cache-status=HIT
+expect-ct=max-age\=86400, enforce
+FILE-LAST_UPDATED=1733389807559
+last-modified=Wed, 04 Sep 2024 21\:01\:49 GMT
+set-cookie=__cf_bm\=BKcW_WD3N0YvIP38iTH6ZiKy9yy6TG9ETjgb589tC_k-1733389807-1.0.1.1-TI7cvB7uP_MYo7aFGh0ZaQd2n1T2zktcsIo1.csjo7dXpJxOUDWF3dx2_uoQwRotNtnjcSvMWoQ_9gx0tPc2qx7_.IaQB.K2kvtMbE7MNzQ; path\=/; expires\=Thu, 05-Dec-24 09\:40\:07 GMT; domain\=.mirrors.cicku.me; HttpOnly; Secure; SameSite\=None
+referrer-policy=same-origin
+content-type=application/x-java-archive
+etag="1238702995"
+\:status=200
+accept-ranges=bytes
+alt-svc=h3\="\:443"; ma\=86400
+cache-control=public, max-age\=43200
+age=2167980
+HTTP_RESPONSE_CODE=200

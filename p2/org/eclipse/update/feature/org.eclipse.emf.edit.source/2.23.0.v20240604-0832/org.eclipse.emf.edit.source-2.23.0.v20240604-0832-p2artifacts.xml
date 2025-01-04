@@ -3,17 +3,17 @@
 <artifacts size='1'>
   <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.edit.source' version='2.23.0.v20240604-0832'>
     <properties size='11'>
-      <property name='artifact.size' value='24037'/>
-      <property name='download.size' value='24037'/>
-      <property name='download.checksum.sha-512' value='3ed4f7c3ca2a5d9143bcc9dc154272fcd14354f4755dcbac3831922507d4db97890002ba41dbb16258eb1b5bad0e85ceff8726263e00fb93bc83768a2b2ba2ca'/>
-      <property name='download.checksum.sha-1' value='fa6e83dacb4d7d3d1f3b7a58d7452e96da522b6a'/>
-      <property name='download.checksum.sha-256' value='0d7f0b4d2c5ad8803c9863104b587f00dddc065163d48a5cf78a6e9ad6d07b9a'/>
+      <property name='artifact.size' value='24044'/>
+      <property name='download.size' value='24044'/>
       <property name='maven-groupId' value='org.eclipse.emf.features'/>
       <property name='maven-artifactId' value='org.eclipse.emf.edit'/>
       <property name='maven-version' value='2.23.0-SNAPSHOT'/>
       <property name='maven-classifier' value='sources-feature'/>
       <property name='maven-type' value='eclipse-feature'/>
       <property name='download.contentType' value='application/zip'/>
+      <property name='download.checksum.sha-512' value='cabd1761a622acd9d94439351d4ed5c4553f81240ec2f9a43b6f663c2e323b5af0fb5dd7a7f17dbdde5ebbad38aea2b9f1fd491bca1ece6e8ec4b3709e74ca8e'/>
+      <property name='download.checksum.sha-1' value='3911b40b1b4adabfa7c6f1b07438f09071e43baf'/>
+      <property name='download.checksum.sha-256' value='626a4fab8a857159a84de8327f448c5203f9317bc5ca3fe7c2547cd0d75df3c2'/>
     </properties>
   </artifact>
 </artifacts>

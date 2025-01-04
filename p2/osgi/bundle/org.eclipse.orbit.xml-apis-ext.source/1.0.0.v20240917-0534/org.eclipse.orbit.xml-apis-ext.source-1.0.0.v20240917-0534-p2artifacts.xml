@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.orbit.xml-apis-ext.source' version='1.0.0.v20240917-0534'>
+    <properties size='9'>
+      <property name='artifact.size' value='155230'/>
+      <property name='download.size' value='155230'/>
+      <property name='download.checksum.sha-512' value='d5d617c8bafd560dca8c1c28455da3b10d44a02c2a4e57c0a9e783a488587a500e61bbd3d9770a4a1ab84d89aa841400cccbd82e4b3255b37b837ce2090705f8'/>
+      <property name='download.checksum.sha-256' value='cfcda8d12d8bf55f70ac4f6781c82c6050018011dbdfeca237c4bcc1b00f6403'/>
+      <property name='maven-groupId' value='org.eclipse.orbit.legacy'/>
+      <property name='maven-artifactId' value='org.eclipse.orbit.xml-apis-ext'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+      <property name='maven-classifier' value='sources'/>
+      <property name='maven-type' value='java-source'/>
+    </properties>
+  </artifact>
+</artifacts>

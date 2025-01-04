@@ -1,0 +1,14 @@
+#Thu Dec 05 10:09:07 CET 2024
+date=Thu, 05 Dec 2024 09\:07\:15 GMT
+content-length=1022
+server=nginx
+expires=Thu, 05 Dec 2024 09\:13\:19 GMT
+vary=Accept-Encoding
+content-encoding=gzip
+strict-transport-security=max-age\=63072000; includeSubDomains; preload
+FILE-LAST_UPDATED=1733389747457
+content-security-policy=frame-ancestors 'self'
+content-type=text/xml
+\:status=200
+cache-control=max-age\=300, public, must-revalidate
+HTTP_RESPONSE_CODE=200

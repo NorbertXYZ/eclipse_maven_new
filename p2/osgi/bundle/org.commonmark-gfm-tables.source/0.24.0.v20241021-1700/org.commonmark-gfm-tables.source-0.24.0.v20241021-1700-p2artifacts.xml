@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.commonmark-gfm-tables.source' version='0.24.0.v20241021-1700'>
+    <properties size='10'>
+      <property name='maven-groupId' value='org.commonmark'/>
+      <property name='maven-artifactId' value='commonmark-ext-gfm-tables'/>
+      <property name='maven-version' value='0.24.0'/>
+      <property name='maven-classifier' value='sources'/>
+      <property name='maven-repository' value='eclipse.maven.central.mirror'/>
+      <property name='maven-type' value='jar'/>
+      <property name='download.size' value='23254'/>
+      <property name='artifact.size' value='23254'/>
+      <property name='download.checksum.sha-512' value='a1d90d303abb59ce86765364d340d9088ebd71b1fa10c79309cd90ad56a4be72a7172c6e3a05669c35b0682d1256919bd5bb07633921ac4c1570c2a197d8ddb8'/>
+      <property name='download.checksum.sha-256' value='e51bee910c84f11ef510d577f68d5049e6382dc087ecd3bad67cc314a6363106'/>
+    </properties>
+  </artifact>
+</artifacts>

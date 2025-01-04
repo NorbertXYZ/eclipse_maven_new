@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Dec 05 10:01:11 CET 2024
+org.eclipse.jdt.launching-3.23.0.jar>central=
+org.eclipse.jdt.launching-3.23.0.pom>central=

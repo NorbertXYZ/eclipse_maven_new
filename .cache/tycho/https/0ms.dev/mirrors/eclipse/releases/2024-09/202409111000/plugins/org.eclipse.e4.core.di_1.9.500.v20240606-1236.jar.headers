@@ -1,0 +1,24 @@
+#Thu Dec 05 10:09:56 CET 2024
+date=Thu, 05 Dec 2024 09\:09\:55 GMT
+content-length=65934
+server=cloudflare
+cf-ray=8ed2e66f5b918c90-EWR
+vary=Accept-Encoding
+true-client-ip=93.207.147.219
+cf-cache-status=REVALIDATED
+priority=u\=0
+expect-ct=max-age\=86400, enforce
+FILE-LAST_UPDATED=1733389796039
+last-modified=Wed, 04 Sep 2024 21\:01\:55 GMT
+nel={"success_fraction"\:0,"report_to"\:"cf-nel","max_age"\:604800}
+cf-bgj=h2pri
+referrer-policy=same-origin
+content-type=application/java-archive
+etag="66d8cac3-1018e"
+\:status=200
+report-to={"endpoints"\:[{"url"\:"https\:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s\=Ti8nhEGs6u%2FNYfULyGZMhQgVSTZ%2B6AAwWntJW556GmQJHgRVSZ1bcBZ3jivlyJ5ZS9mF14roq4BauhIKFFZJwvfsTyEi9GpwwNLHwCz2%2BuLxqwaq6Fmij2LC"}],"group"\:"cf-nel","max_age"\:604800}
+server-timing=cfL4;desc\="?proto\=TCP&rtt\=115719&min_rtt\=97767&rtt_var\=14477&sent\=1052&recv\=1037&lost\=0&retrans\=0&sent_bytes\=1484348&recv_bytes\=1845&delivery_rate\=3200548&cwnd\=936&unsent_bytes\=0&cid\=18d04d4c32f9866b&ts\=27207&x\=0"
+accept-ranges=bytes
+alt-svc=h3\="\:443"; ma\=86400
+cache-control=max-age\=86400, s-maxage\=86400
+HTTP_RESPONSE_CODE=200

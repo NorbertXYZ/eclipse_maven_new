@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.commonmark-gfm-tables' version='0.24.0.v20241021-1700'>
+    <properties size='7'>
+      <property name='maven-wrapped-groupId' value='org.commonmark'/>
+      <property name='maven-wrapped-artifactId' value='commonmark-ext-gfm-tables'/>
+      <property name='maven-wrapped-version' value='0.24.0'/>
+      <property name='download.size' value='34954'/>
+      <property name='artifact.size' value='34954'/>
+      <property name='download.checksum.sha-512' value='5bd89315f3639b3d863ae129d5cfe87c25392cba44c3182cb080779ff27d834147c89588a51e6b50a90fda299b13a635731333c6ec9cb5bada9519642669e230'/>
+      <property name='download.checksum.sha-256' value='b6480b2c0b8038be5fa7742bf9d2bfd1a5aba747b592cec574df943c15e75b49'/>
+    </properties>
+  </artifact>
+</artifacts>

@@ -1,10 +1,10 @@
-#Tue Oct 01 09:54:55 CEST 2024
-date=Tue, 01 Oct 2024 07\:53\:17 GMT
+#Thu Dec 05 10:18:42 CET 2024
+date=Thu, 05 Dec 2024 09\:16\:50 GMT
 content-length=31664
 server=nginx
 strict-transport-security=max-age\=63072000; includeSubDomains; preload
 last-modified=Wed, 21 Aug 2024 21\:33\:28 GMT
-FILE-LAST_UPDATED=1727769295299
+FILE-LAST_UPDATED=1733390322211
 content-security-policy=frame-ancestors 'self'
 content-type=application/x-java-archive
 etag="7bb0-620384af4d784"
