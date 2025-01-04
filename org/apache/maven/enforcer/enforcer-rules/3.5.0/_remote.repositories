@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Oct 01 09:35:03 CEST 2024
+enforcer-rules-3.5.0.pom>central=
+enforcer-rules-3.5.0.jar>central=

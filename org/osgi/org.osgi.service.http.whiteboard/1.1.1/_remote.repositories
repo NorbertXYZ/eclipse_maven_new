@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Oct 01 09:42:00 CEST 2024
+org.osgi.service.http.whiteboard-1.1.1-sources.jar>central=
+org.osgi.service.http.whiteboard-1.1.1.jar>central=
+org.osgi.service.http.whiteboard-1.1.1.pom>central=

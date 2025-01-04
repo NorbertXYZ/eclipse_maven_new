@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.junit.source' version='4.13.2.v20230809-1000'>
+    <properties size='10'>
+      <property name='maven-groupId' value='junit'/>
+      <property name='maven-artifactId' value='junit'/>
+      <property name='maven-version' value='4.13.2'/>
+      <property name='maven-classifier' value='sources'/>
+      <property name='maven-repository' value='eclipse.maven.central.mirror'/>
+      <property name='maven-type' value='jar'/>
+      <property name='download.size' value='262668'/>
+      <property name='artifact.size' value='262668'/>
+      <property name='download.checksum.sha-512' value='529aef4c9ed0c01e24b2146a59f8dc59e117d645d883e18df6e04ee1e023c0f78ce940019d2d4f54220da05574e71346ac17fa770dc27dffd7a3b7f20b594e9b'/>
+      <property name='download.checksum.sha-256' value='5a69513d5db00d0f3249f0fbb078409da1752ce6f91d29eb4dd9098ed02f1528'/>
+    </properties>
+  </artifact>
+</artifacts>

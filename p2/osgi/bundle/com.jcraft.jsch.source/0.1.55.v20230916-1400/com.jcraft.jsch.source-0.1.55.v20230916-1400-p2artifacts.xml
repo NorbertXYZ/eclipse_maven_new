@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='com.jcraft.jsch.source' version='0.1.55.v20230916-1400'>
+    <properties size='10'>
+      <property name='maven-groupId' value='com.jcraft'/>
+      <property name='maven-artifactId' value='jsch'/>
+      <property name='maven-version' value='0.1.55'/>
+      <property name='maven-classifier' value='sources'/>
+      <property name='maven-repository' value='eclipse.maven.central.mirror'/>
+      <property name='maven-type' value='jar'/>
+      <property name='download.size' value='300114'/>
+      <property name='artifact.size' value='300114'/>
+      <property name='download.checksum.sha-512' value='1ce86d60bb7894d6310d462625856082d3973d3fe59a3fd8d9492d5ed76ca97bbd120b11e1935d56c1fe64450be1c7be021daa9290d1e169ede6fa9adaef0bbe'/>
+      <property name='download.checksum.sha-256' value='e7d73cb7830b055e08c7e2783b68ebc7d5bbe146e43299b36bf3a85dab2e05ba'/>
+    </properties>
+  </artifact>
+</artifacts>

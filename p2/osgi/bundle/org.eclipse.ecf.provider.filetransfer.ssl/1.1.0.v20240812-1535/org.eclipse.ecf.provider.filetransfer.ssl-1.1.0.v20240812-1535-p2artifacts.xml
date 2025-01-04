@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.ecf.provider.filetransfer.ssl' version='1.1.0.v20240812-1535'>
+    <properties size='9'>
+      <property name='artifact.size' value='13248'/>
+      <property name='download.size' value='13248'/>
+      <property name='download.checksum.sha-512' value='5e4d9133207169dd27e1d20005daaf47cae89193b2e24a0dd4c7e1503e532ed4ee8d0f8a5e44ae07764afee4fd4e9ef2172ea9697f7e22efa5f92b51bc12f452'/>
+      <property name='download.checksum.sha-1' value='d2b5e152854106ee317abbe424d2195e9da43649'/>
+      <property name='download.checksum.sha-256' value='65b4713478e7af30aacf01c7152b07e78f9e8a35a13252ab6643583c61210b40'/>
+      <property name='maven-groupId' value='org.eclipse.ecf'/>
+      <property name='maven-artifactId' value='org.eclipse.ecf.provider.filetransfer.ssl'/>
+      <property name='maven-version' value='1.1.0-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-plugin'/>
+    </properties>
+  </artifact>
+</artifacts>

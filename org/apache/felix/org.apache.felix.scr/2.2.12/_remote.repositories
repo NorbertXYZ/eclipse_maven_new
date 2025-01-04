@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Oct 01 09:41:02 CEST 2024
+org.apache.felix.scr-2.2.12.pom>central=
+org.apache.felix.scr-2.2.12-sources.jar>central=
+org.apache.felix.scr-2.2.12.jar>central=

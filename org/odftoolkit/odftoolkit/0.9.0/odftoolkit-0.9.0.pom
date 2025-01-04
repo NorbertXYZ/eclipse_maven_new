@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.odftoolkit</groupId>
+    <artifactId>odftoolkit</artifactId>
+    <version>0.9.0</version>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.apache</groupId>
+        <artifactId>apache</artifactId>
+        <version>23</version>
+        <relativePath />
+    </parent>
+
+    <properties>
+        <jdk.version>1.8</jdk.version>
+        <odf.version>1.2</odf.version>
+        <javadoc.bottom>Copyright © {inceptionYear}–2018 Apache Software Foundation; Copyright © 2018–{currentYear} {organizationName}. All rights reserved.</javadoc.bottom>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss</maven.build.timestamp.format>
+        <maven.javadoc.skip>false</maven.javadoc.skip>
+        <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
+        <!-- ANT driven release bundle creation: 3 ZIPs for the complete Toolkit for binaries, documentation and sources -->
+        <release.dir>${basedir}/target/release</release.dir>
+        <release.dir.bin>${release.dir}/${project.version}/binaries</release.dir.bin>
+        <release.dir.doc>${release.dir}/${project.version}/docs</release.dir.doc>
+        <release.dir.src>${release.dir}/${project.version}/sources</release.dir.src>
+        <release.tmpdir>${basedir}/target/release-tmp</release.tmpdir>
+        <release.tmpdir.bin>${release.tmpdir}/${project.version}-bin</release.tmpdir.bin>
+        <release.tmpdir.doc>${release.tmpdir}/${project.version}-doc</release.tmpdir.doc>
+        <release.tmpdir.src>${release.tmpdir}/${project.version}-src</release.tmpdir.src>
+        <release.zip.bin>odftoolkit-${project.version}-bin.zip</release.zip.bin>
+        <release.zip.doc>odftoolkit-${project.version}-doc.zip</release.zip.doc>
+        <release.zip.src>odftoolkit-${project.version}-src.zip</release.zip.src>
+    </properties>
+
+
+    <!-- At root project level defining dependencies useable across all projects.
+    Making version management easy and consistent! -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>xerces</groupId>
+                <artifactId>xercesImpl</artifactId>
+                <version>2.12.1</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.13.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.jena</groupId>
+                <artifactId>jena-core</artifactId>
+                <version>3.17.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.jena</groupId>
+                <artifactId>jena-core</artifactId>
+                <classifier>tests</classifier>
+                <version>3.17.0</version>
+            </dependency>
+            <!-- Jena 3.16 requires the following slf4j API -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.31</version>
+            </dependency>
+            <dependency>
+                <groupId>net.rootdev</groupId>
+                <artifactId>java-rdfa</artifactId>
+                <version>0.4.2</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>1.7</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>1.4</version>
+            </dependency>
+            <dependency>
+                <groupId>net.java.dev.msv</groupId>
+                <artifactId>msv-core</artifactId>
+                <version>2013.6.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant</artifactId>
+                <version>1.10.10</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>taglets</module>
+        <module>generator</module>
+        <module>xslt-runner</module>
+        <module>xslt-runner-task</module>
+        <module>odfdom</module>
+        <module>validator</module>
+        <module>simple</module>
+    </modules>
+
+    <name>The ODF Toolkit</name>
+    <description>
+        The ODF Toolkit is a set of Java modules that allow
+        programmatic creation, scanning and manipulation of Open Document Format
+        (ISO/IEC 26300 == ODF) documents. Unlike other approaches which rely on
+        runtime manipulation of heavy-weight editors via an automation
+        interface, the ODF Toolkit is lightweight and ideal for server use.
+    </description>
+    <url>https://odftoolkit.org</url>
+    <organization>
+        <name>The Document Foundation</name>
+        <url>https://www.documentfoundation.org/</url>
+    </organization>
+
+    <scm>
+        <connection>scm:git:git://github.com/tdf/odftoolkit.git</connection>
+        <developerConnection>scm:git:git@github.com:tdf/odftoolkit.git</developerConnection>
+        <url>https://github.com/tdf/odftoolkit.git</url>
+        <tag>0.9.0</tag>
+    </scm>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/tdf/odftoolkit/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>travis</system>
+        <url>https://travis-ci.community</url>
+    </ciManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
+            </url>
+        </repository>
+        <!-- not used for deployment but only for site:stage goal -->
+        <site>
+            <id>odftoolkit.org</id>
+            <url>https://odftoolkit.org/reports/${project.version}/</url>
+        </site>
+    </distributionManagement>
+    <developers>
+        <developer>
+            <id>svanteschubert</id>
+            <name>Svante</name>
+            <email>svanteschubert AT apache.org</email>
+            <organization>Freelancer</organization>
+            <roles>
+                <role>OASIS ODF Collaboration subcommittee chair</role>
+                <role>OASIS ODF committee member</role>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>mst</id>
+            <name>Michael</name>
+            <organization>CIB Software</organization>
+            <organizationUrl>https://www.cib.de/</organizationUrl>
+            <roles>
+                <role>OASIS ODF committee member</role>
+                <role>developer</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>olira</id>
+            <name>Oliver</name>
+            <email>opensource AT neomm.net</email>
+            <organization>Freelancer</organization>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+    <mailingLists>
+        <mailingList>
+            <!--
+            Help: <dev+help@odftoolkit.org>
+            Digest subscription: <dev+subscribe-digest@odftoolkit.org>
+            No-mail subscription: <dev+subscribe-nomail@odftoolkit.org>
+            -->
+            <post>dev@odftoolkit.org</post>
+            <subscribe>dev+subscribe@odftoolkit.org</subscribe>
+            <unsubscribe>dev+unsubscribe@odftoolkit.org</unsubscribe>
+            <archive>https://listarchives.odftoolkit.org/dev/</archive>
+            <name>dev.odftoolkit.org</name><!-- List-Id -->
+        </mailingList>
+    </mailingLists>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.cosium.code</groupId>
+                <artifactId>git-code-format-maven-plugin</artifactId>
+                <version>2.7</version>
+                <executions>
+                    <!-- On commit, format the modified java files -->
+                    <execution>
+                        <id>install-formatter-hook</id>
+                        <goals>
+                            <goal>install-hooks</goal>
+                        </goals>
+                    </execution>
+                    <!-- On Maven verify phase, fail if any file
+                    (including unmodified) is badly formatted -->
+                    <execution>
+                        <id>validate-code-format</id>
+                        <goals>
+                            <goal>validate-code-format</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.ec4j.maven</groupId>
+                <artifactId>editorconfig-maven-plugin</artifactId>
+                <version>0.1.1</version>
+                <executions>
+                    <execution>
+                        <id>check</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>format</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- All files are included by default: -->
+                    <includes>
+                        <include>**</include>
+                    </includes>
+                    <excludes>
+                        <!-- +++++++++++ https://ec4j.github.io/editorconfig-maven-plugin/ +++++++++++-->
+                        <!-- Note that maven submodule directories and many non-source file patterns are excluded by default -->
+                        <!--     see https://github.com/ec4j/editorconfig-maven-plugin/blob/master/ec4j-lint-api/src/main/java/org/ec4j/maven/lint/api/Constants.java#L37 -->
+                        <!--      See https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties -->
+                        <!--      !!! 'mvn editorconfig:format' fixes format via command line!!! -->
+
+                        <!-- You can exclude further files from processing: -->
+                        <!--<exclude>src/main/**/*.whatever</exclude>-->
+                        <exclude>target</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8.2</version>
+                <executions>
+                    <execution>
+                        <id>maven-deploy</id>
+                        <phase>deploy</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M4</version>
+                <configuration>
+                    <localCheckout>true</localCheckout>
+                    <pushChanges>false</pushChanges>
+                    <mavenExecutorId>forked-path</mavenExecutorId>
+                    <arguments>-Dgpg.passphrase=${gpg.passphraseServerId}</arguments>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-provider-gitexe</artifactId>
+                        <version>1.11.2</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.maven.scm</groupId>
+                        <artifactId>maven-scm-api</artifactId>
+                        <version>1.11.2</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.8</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+            <!-- see http://maven.apache.org/plugins/maven-gpg-plugin/usage.html -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                        <id>default-sign</id>
+                        <phase>verify</phase>
+                        <configuration>
+                            <!-- Add GPG passphrase in Maven settings.xml under .m2 home, see
+                            https://dzone.com/articles/publish-your-artifacts-to-maven-central -->
+                            <keyname>${gpg.keyname}</keyname>
+                            <passphraseServerId>${gpg.passphraseServerId}</passphraseServerId>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>pedantic</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.rat</groupId>
+                        <artifactId>apache-rat-plugin</artifactId>
+                        <configuration>
+                            <excludes>
+                                <!-- for all projects -->
+                                <exclude>CHANGES.txt</exclude>
+                                <exclude>.gitignore</exclude>
+                                <exclude>.editorconfig</exclude>
+                                <exclude>.travis.yml</exclude>
+                                <exclude>README.md</exclude>
+                                <exclude>DEPENDENCIES</exclude>
+                                <exclude>docs/**/*</exclude>
+                                <exclude>src/site/**/*</exclude>
+                                <exclude>nb-configuration.xml</exclude>
+                                <exclude>.factorypath</exclude>
+                                <exclude>manifest.mf</exclude>
+                                <!-- schema2template -->
+                                <exclude>src/test/resources/examples/odf/*.ref</exclude>
+                                <exclude>src/main/resources/examples/odf/odfdom-python/OdfTextDocument.odt</exclude>
+                                <exclude>src/main/resources/examples/odf/odf-schemas/*.rng</exclude>
+                                <!-- odfdom -->
+                                <exclude>src/main/resources/**</exclude>
+                                <exclude>src/test/resources/**</exclude>
+                                <exclude>src/main/javadoc/doc-files/OpenDocument-v${odf.version}-part1.html</exclude>
+                                <exclude>src/main/javadoc/doc-files/OpenDocument-v${odf.version}-part3.html</exclude>
+                                <exclude>src/codegen/resources/dom/*.rng</exclude>
+                                <exclude>src/codegen/resources/pkg/*.rng</exclude>
+                                <!-- xslt-runner-task -->
+                                <exclude>nbproject/**</exclude>
+                            </excludes>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- see http://maven.apache.org/plugins/maven-gpg-plugin/usage.html -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.6</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                                <id>default-sign</id>
+                                <phase>verify</phase>
+                                <configuration>
+                                    <!-- Add GPG passphrase in Maven settings.xml under .m2 home, see
+                                    https://dzone.com/articles/publish-your-artifacts-to-maven-central -->
+                                    <keyname>${gpg.keyname}</keyname>
+                                    <passphraseServerId>${gpg.passphraseServerId}</passphraseServerId>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- The purpose of the following profile is to make a SonaType Maven release.
+            PRECONDITION:
+                1) You need to have a GPG Signature specified:
+                    Best in your <USR_HOME>/.m2/settings.xml
+                        <profile>
+                            <id>ossrh</id>
+                            <activation>
+                                <activeByDefault>true</activeByDefault>
+                            </activation>
+                            <properties>
+                                <gpg.keyname>YOUR_KEY_ID</gpg.keyname>
+                                <gpg.passphraseServerId>YOUR_KEY_PASSPHRASE</gpg.passphraseServerId>
+                            </properties>
+                        </profile>
+
+                    </profiles>
+                see
+
+            This profile is being triggered via command line by its id, for instance:
+                mvn install -Pprepare-release -Ppedantic
+
+            This plugin is doing the following
+                1) All relevant binary & documentation files are being copied via ANT into ${release.tmpdir}
+                2) Via the Maven Assembly Plugin three ZIPs are being created for sources, binaries and documentations.
+                3) All ZIPs are signed and copied into the directory: ${release.dir}
+        -->
+        <profile>
+            <id>prepare-release</id>
+            <build>
+                <plugins>
+                    <!-- GitHub Release: 3 ZIPs (bin, doc, source) for release-->
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <inherited>false</inherited>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <id>prepare-github-release</id>
+                                <phase>install</phase>
+                                <configuration>
+                                    <target>
+                                        <!-- MAKE 3 DIRECTORIES -->
+                                        <mkdir dir="${release.dir.bin}" />
+                                        <mkdir dir="${release.dir.doc}" />
+                                        <mkdir dir="${release.dir.src}" />
+                                        <mkdir dir="${release.tmpdir.bin}" />
+                                        <mkdir dir="${release.tmpdir.doc}" />
+                                        <mkdir dir="${release.tmpdir.src}" />
+
+                                        <!-- COLLECT FILES OF BUNDLES -->
+                                        <!-- collect binary artefacts -->
+                                        <copy todir="${release.tmpdir.bin}" flatten="true">
+                                            <fileset dir="${basedir}">
+                                                <include name="*.txt" />
+                                                <include name="KEYS" />
+                                                <include name="NOTICE" />
+                                                <include name="LICENSE" />
+                                                <include name="odfdom/target/*.jar" />
+                                                <include name="simple/target/*.jar" />
+                                                <include name="validator/target/*.war" />
+                                                <include name="validator/target/*.jar" />
+                                                <include name="xslt-runner/target/*.jar" />
+                                                <include name="xslt-runner-task/target/*.jar" />
+                                                <exclude name="**/target/**-javadoc.jar" />
+                                                <exclude name="**/target/**-sources.jar" />
+                                            </fileset>
+                                        </copy>
+                                        <!-- collect documentation artefacts - without directory hierarchy -->
+                                        <copy todir="${release.tmpdir.doc}" flatten="true">
+                                            <fileset dir="${basedir}">
+                                                <include name="*.txt" />
+                                                <include name="KEYS" />
+                                                <include name="NOTICE" />
+                                                <include name="LICENSE" />
+                                                <include name="**/target/*-javadoc.jar" />
+                                            </fileset>
+                                        </copy>
+                                        <!-- collect documentation artefacts - keeping directory hierarchy -->
+                                        <copy todir="${release.tmpdir.doc}/site">
+                                            <fileset dir="${basedir}/docs" />
+                                        </copy>
+                                        <!-- collect source code -->
+                                        <copy todir="${release.tmpdir.src}">
+                                            <fileset dir="${basedir}">
+                                                <include name="**" />
+                                                <exclude name="**/target/**" />
+                                                <exclude name="**/.vscode/**" />
+                                                <exclude name="**/.project" />
+                                                <exclude name="**/.classpath" />
+                                                <exclude name="**/.nb-configuration.xml" />
+                                                <exclude name="**/.settings/**" />
+                                                <exclude name="**/.classes/**" />
+                                                <exclude name="**/.idea" />
+                                            </fileset>
+                                        </copy>
+
+                                        <!-- ZIP FILES to 3 BUNDLES -->
+                                        <zip basedir="${release.tmpdir.bin}" destfile="${basedir}/target/${release.zip.bin}" />
+                                        <zip basedir="${release.tmpdir.doc}" destfile="${basedir}/target/${release.zip.doc}" />
+                                        <zip basedir="${release.tmpdir.src}" destfile="${basedir}/target/${release.zip.src}" />
+
+                                        <!-- SIGN 3 BUNDLES -->
+                                        <checksum algorithm="SHA-512" fileext=".sha">
+                                            <fileset dir="${basedir}/target">
+                                                <include name="*.zip" />
+                                                <include name="*.tar.gz" />
+                                                <include name="*.tar.bz2" />
+                                            </fileset>
+                                        </checksum>
+
+                                        <!-- MOVE THE 3 BUNDLES -->
+                                        <move todir="${release.dir.bin}">
+                                            <fileset dir="${basedir}/target">
+                                                <include name="*-bin.*" />
+                                            </fileset>
+                                        </move>
+                                        <move todir="${release.dir.doc}">
+                                            <fileset dir="${basedir}/target">
+                                                <include name="*-doc.*" />
+                                            </fileset>
+                                        </move>
+                                        <move todir="${release.dir.src}">
+                                            <fileset dir="${basedir}/target">
+                                                <include name="*-src.*" />
+                                            </fileset>
+                                        </move>
+
+                                        <!-- DELETE TEMPORARY DIRECTORIES>-->
+                                        <delete quiet="true" dir="${basedir}/target/archive-tmp" />
+                                        <delete quiet="true" dir="${release.tmpdir}" />
+
+                                        <echo>*** The release has been prepared in:  ${release.dir} ***</echo>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.apache.ant</groupId>
+                                <artifactId>ant-nodeps</artifactId>
+                                <version>1.8.1</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

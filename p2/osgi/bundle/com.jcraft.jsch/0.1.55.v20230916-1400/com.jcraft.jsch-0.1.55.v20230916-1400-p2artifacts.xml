@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='com.jcraft.jsch' version='0.1.55.v20230916-1400'>
+    <properties size='7'>
+      <property name='maven-wrapped-groupId' value='com.jcraft'/>
+      <property name='maven-wrapped-artifactId' value='jsch'/>
+      <property name='maven-wrapped-version' value='0.1.55'/>
+      <property name='download.size' value='307507'/>
+      <property name='artifact.size' value='307507'/>
+      <property name='download.checksum.sha-512' value='ef5eb7c7ada5dd0f6788911488d21d7d17e3be2c1c19f9868b07875d65821269e965c91b9ae54d14a47ebafef9d14923d7df48b05c387304eef7db56757e56e4'/>
+      <property name='download.checksum.sha-256' value='9b02e8bfde513c454fe7900978df7f900211ab9835e7c2d6cd1067833779acbe'/>
+    </properties>
+  </artifact>
+</artifacts>

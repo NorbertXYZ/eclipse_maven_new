@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.filetransfer.httpclientjava.feature.source' version='2.0.200.v20240808-1900'>
+    <properties size='11'>
+      <property name='artifact.size' value='33220'/>
+      <property name='download.size' value='33220'/>
+      <property name='download.checksum.sha-512' value='56e5655169aab0c9b7d6d46b0d6cc87d3769d3601f16c0399b0d8c1ac3f7572834a3b334b6c8fee82999a9327e67287bc4bb72921dcc945269fdf2055d24b4e5'/>
+      <property name='download.checksum.sha-1' value='d4273a6645c29018d3eb5d16fcb250e920df0570'/>
+      <property name='download.checksum.sha-256' value='b5897c3d8387491a5a397869c93b779cff24db4f2d4684e1b7c86e4e2f150e10'/>
+      <property name='maven-groupId' value='org.eclipse.ecf'/>
+      <property name='maven-artifactId' value='org.eclipse.ecf.filetransfer.httpclientjava.feature'/>
+      <property name='maven-version' value='2.0.200-SNAPSHOT'/>
+      <property name='maven-classifier' value='sources-feature'/>
+      <property name='maven-type' value='eclipse-feature'/>
+      <property name='download.contentType' value='application/zip'/>
+    </properties>
+  </artifact>
+</artifacts>

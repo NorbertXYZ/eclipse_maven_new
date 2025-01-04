@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.core.ssl.feature' version='1.1.600.v20240812-1535'>
+    <properties size='10'>
+      <property name='artifact.size' value='23419'/>
+      <property name='download.size' value='23419'/>
+      <property name='download.checksum.sha-512' value='a56cebee7e584593844770a813a4df694e2c1844e804c04ae033b96d3ffdaa6d6eaf5282c864d0526d1eac56e6c378b46082abdaa1cb7b4dc7876513a6d79bcd'/>
+      <property name='download.checksum.sha-1' value='28516aa30eb46be2be762bb5b40eeb1f3cd2cf34'/>
+      <property name='download.checksum.sha-256' value='65731a3167438288fbbe1b799b796aa464f27978ef919191b1147607db99136c'/>
+      <property name='maven-groupId' value='org.eclipse.ecf'/>
+      <property name='maven-artifactId' value='org.eclipse.ecf.core.ssl.feature'/>
+      <property name='maven-version' value='1.1.600-SNAPSHOT'/>
+      <property name='maven-type' value='eclipse-feature'/>
+      <property name='download.contentType' value='application/zip'/>
+    </properties>
+  </artifact>
+</artifacts>

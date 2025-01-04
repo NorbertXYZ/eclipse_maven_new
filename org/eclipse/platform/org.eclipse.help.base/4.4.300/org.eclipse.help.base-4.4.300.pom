@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.eclipse.platform</groupId>
+  <artifactId>org.eclipse.help.base</artifactId>
+  <version>4.4.300</version>
+  <name>Help System Base</name>
+  <description>Help System Base</description>
+  <url>https://projects.eclipse.org/projects/eclipse.platform</url>
+  <licenses>
+    <license>
+      <name>Eclipse Public License - v 2.0</name>
+      <url>https://www.eclipse.org/legal/epl-2.0/</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <organization>
+    <name>Eclipse Foundation</name>
+    <url>https://www.eclipse.org/</url>
+  </organization>
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/eclipse-platform/eclipse.platform/issues</url>
+  </issueManagement>
+  <scm>
+    <connection>scm:git:https://github.com/eclipse-platform/eclipse.platform.git</connection>
+    <url>https://github.com/eclipse-platform/eclipse.platform</url>
+  </scm>
+  <developers>
+    <developer>
+      <url>https://projects.eclipse.org/projects/eclipse.platform/who</url>
+    </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.ant.core</artifactId>
+      <version>3.7.300</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.runtime</artifactId>
+      <version>3.31.0</version>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.help</artifactId>
+      <version>3.10.300</version>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.core.net</artifactId>
+      <version>1.5.300</version>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.lucene</groupId>
+      <artifactId>lucene-analysis-common</artifactId>
+      <version>9.10.0</version>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.lucene</groupId>
+      <artifactId>lucene-core</artifactId>
+      <version>9.10.0</version>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.lucene</groupId>
+      <artifactId>lucene-analysis-smartcn</artifactId>
+      <version>9.10.0</version>
+      <optional>false</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.platform</groupId>
+      <artifactId>org.eclipse.equinox.http.jetty</artifactId>
+      <version>3.9.100</version>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>

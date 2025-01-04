@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mirrors>	<mirror url="https://ftp.fau.de/eclipse/releases/2024-03/202403131000" label="[Germany] University of Erlangen-Nuremberg (https)" />
+	<mirror url="https://mirror.ibcp.fr/pub/eclipse/releases/2024-03/202403131000" label="[France] CNRS IBCP (https)" />
+	<mirror url="https://mirror.accum.se/mirror/eclipse.org//releases/2024-03/202403131000" label="[Sweden] Academic Computer Club in Umeå, Sweden (https)" />
+	<mirror url="https://eclipse.mirror.garr.it/releases/2024-03/202403131000" label="[Italy] Consortium GARR (https)" />
+	<mirror url="https://mirror.dkm.cz/eclipse/releases/2024-03/202403131000" label="[Czech Republic] UPC Ceska republika, a.s. (https)" />
+	<mirror url="https://mirrors.dotsrc.org/eclipse//releases/2024-03/202403131000" label="[Denmark] dotsrc.org (https)" />
+	<mirror url="https://ftp.halifax.rwth-aachen.de/eclipse/releases/2024-03/202403131000" label="[Germany] RWTH Aachen University (https)" />
+	<mirror url="https://ftp.snt.utwente.nl/pub/software/eclipse/releases/2024-03/202403131000" label="[Netherlands] SNT, University of Twente (https)" />
+	<mirror url="https://ftp.linux.org.tr/eclipse//releases/2024-03/202403131000" label="[Turkey] Linux Kullanicilari Dernegi (https)" />
+	<mirror url="https://eclipse.mirror.liteserver.nl/releases/2024-03/202403131000" label="[Netherlands] LiteServer (https)" />
+	<mirror url="https://mirror.tspu.ru/eclipse/releases/2024-03/202403131000" label="[Russian Federation] Tomsk State Pedagogical University (https)" />
+	<mirror url="https://0ms.dev/mirrors/eclipse//releases/2024-03/202403131000" label="[United States] 0ms.dev Team (https)" />
+	<mirror url="https://mirror.csclub.uwaterloo.ca/eclipse/releases/2024-03/202403131000" label="[Canada] University of Waterloo Computer Science Club (https)" />
+	<mirror url="https://ftp2.osuosl.org/pub/eclipse/releases/2024-03/202403131000" label="[United States] OSU Open Source Lab (https)" />
+	<mirror url="https://mirror.umd.edu/eclipse/releases/2024-03/202403131000" label="[United States] University of Maryland (https)" />
+	<mirror url="https://eclipse.mirror.rafal.ca/releases/2024-03/202403131000" label="[Canada] Rafal Rzeczkowski (https)" />
+	<mirror url="https://mirror.clarkson.edu/eclipse/releases/2024-03/202403131000" label="[United States] Clarkson University Open Source Institute (https)" />
+	<mirror url="https://mirrors.xmission.com/eclipse/releases/2024-03/202403131000" label="[United States] XMission Internet (https)" />
+	<mirror url="https://mirrors.jevincanders.net/eclipse/releases/2024-03/202403131000" label="[United States] Jevin Canders (https)" />
+	<mirror url="https://ca.mirrors.cicku.me/eclipse//releases/2024-03/202403131000" label="[Canada] CICKU (https)" />
+	<mirror url="https://mirror.kakao.com/eclipse/releases/2024-03/202403131000" label="[Korea, Republic Of] Kakao Corp. (https)" />
+	<mirror url="https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2024-03/202403131000" label="[Japan] Yamagata University (https)" />
+	<mirror url="https://mirror.library.ucy.ac.cy/eclipse/releases/2024-03/202403131000" label="[Cyprus] University of Cyprus, Library (https)" />
+	<mirror url="https://ftp.jaist.ac.jp/pub/eclipse/releases/2024-03/202403131000" label="[Japan] Japan Advanced Institute of Science and Technology (https)" />
+	<mirror url="https://www.ftp.saix.net/Eclipse//releases/2024-03/202403131000" label="[South Africa] Openserve (https)" />
+	<mirror url="https://mirror.aarnet.edu.au/pub/eclipse/releases/2024-03/202403131000" label="[Australia] Australian Academic Research Network (https)" />
+	<mirror url="https://eclipse.c3sl.ufpr.br/releases/2024-03/202403131000" label="[Brazil] C3SL - Federal University of Parana (https)" />
+</mirrors>

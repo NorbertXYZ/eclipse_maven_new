@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.junit' version='4.13.2.v20230809-1000'>
+    <properties size='7'>
+      <property name='maven-wrapped-groupId' value='junit'/>
+      <property name='maven-wrapped-artifactId' value='junit'/>
+      <property name='maven-wrapped-version' value='4.13.2'/>
+      <property name='download.size' value='424926'/>
+      <property name='artifact.size' value='424926'/>
+      <property name='download.checksum.sha-512' value='4a777ff9d9ca20b318fbf9125aa7dbd82c975eb984b161b4561a6732f2b926f77807285bdc242707f7d0a43435a57fb1fcf50bfae840c1e8c6f569123543d99f'/>
+      <property name='download.checksum.sha-256' value='7d5e64ebd0b273d168f9284d314abf4e2d7313281c914aa83e6da2781e755e89'/>
+    </properties>
+  </artifact>
+</artifacts>

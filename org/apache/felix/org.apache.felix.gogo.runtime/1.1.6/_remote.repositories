@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Oct 01 09:55:40 CEST 2024
+org.apache.felix.gogo.runtime-1.1.6.pom>central=
+org.apache.felix.gogo.runtime-1.1.6.jar>central=
+org.apache.felix.gogo.runtime-1.1.6-sources.jar>central=

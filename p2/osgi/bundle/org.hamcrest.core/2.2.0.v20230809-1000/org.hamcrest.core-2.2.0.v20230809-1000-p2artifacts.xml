@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.hamcrest.core' version='2.2.0.v20230809-1000'>
+    <properties size='7'>
+      <property name='maven-wrapped-groupId' value='org.hamcrest'/>
+      <property name='maven-wrapped-artifactId' value='hamcrest-core'/>
+      <property name='maven-wrapped-version' value='2.2'/>
+      <property name='download.size' value='9411'/>
+      <property name='artifact.size' value='9411'/>
+      <property name='download.checksum.sha-512' value='e0cf681b3143ab102d5629d80b588653da671ee956e82cca759d651e34c3dac823d2c6968a5b8feb773dc3e8a9b129c4800d90dca3dc4fa7a5a1f491d4d20d87'/>
+      <property name='download.checksum.sha-256' value='9be2aeac81fedef7ce73dd26d93e53644b1f9cd7cb1c8f62216f5adb36517d7b'/>
+    </properties>
+  </artifact>
+</artifacts>

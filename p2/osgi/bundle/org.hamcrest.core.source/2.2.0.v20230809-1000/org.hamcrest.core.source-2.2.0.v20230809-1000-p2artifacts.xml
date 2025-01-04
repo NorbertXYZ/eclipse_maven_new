@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.hamcrest.core.source' version='2.2.0.v20230809-1000'>
+    <properties size='10'>
+      <property name='maven-groupId' value='org.hamcrest'/>
+      <property name='maven-artifactId' value='hamcrest-core'/>
+      <property name='maven-version' value='2.2'/>
+      <property name='maven-classifier' value='sources'/>
+      <property name='maven-repository' value='eclipse.maven.central.mirror'/>
+      <property name='maven-type' value='jar'/>
+      <property name='download.size' value='9598'/>
+      <property name='artifact.size' value='9598'/>
+      <property name='download.checksum.sha-512' value='19d345f4e5a22c2a71891e6e36781d1035a8178dc4ae00475b1eacd99fe7b8f9c59ab2da0ef03af6ed823d5fdd3895fbfaab55208c00c6feec72d5336f841e54'/>
+      <property name='download.checksum.sha-256' value='1ee2ce2b1be9d865e756c53406e87c560c69d7678a404405297bc19396785494'/>
+    </properties>
+  </artifact>
+</artifacts>

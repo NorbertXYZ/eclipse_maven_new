@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Oct 01 09:52:42 CEST 2024
+org.bndtools.versioncontrol.ignores.manager-7.0.0-sources.jar>central=
+org.bndtools.versioncontrol.ignores.manager-7.0.0.pom>central=
+org.bndtools.versioncontrol.ignores.manager-7.0.0.jar>central=

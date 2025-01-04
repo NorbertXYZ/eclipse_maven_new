@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Oct 01 09:30:46 CEST 2024
+org.eclipse.equinox.registry-3.12.0.pom>central=
+org.eclipse.equinox.registry-3.12.0.jar>central=

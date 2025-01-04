@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.apache.xmlgraphics.source' version='2.9.0.v20230916-1600'>
+    <properties size='10'>
+      <property name='maven-groupId' value='org.apache.xmlgraphics'/>
+      <property name='maven-artifactId' value='xmlgraphics-commons'/>
+      <property name='maven-version' value='2.9'/>
+      <property name='maven-classifier' value='sources'/>
+      <property name='maven-repository' value='eclipse.maven.central.mirror'/>
+      <property name='maven-type' value='jar'/>
+      <property name='download.size' value='676866'/>
+      <property name='artifact.size' value='676866'/>
+      <property name='download.checksum.sha-512' value='7f6858e93569bafd2ac1438a25adab1ad8d337b45252a38b18b9b1256d8ebf75a95c6b07c9ae362c117f315b0e3738fa9758dfb242ba5e5a9f0ade318191988e'/>
+      <property name='download.checksum.sha-256' value='eef6602cb0b98437f3dbd9d11bede07e39c405d0ce4c7ce077125b4e16b82e38'/>
+    </properties>
+  </artifact>
+</artifacts>

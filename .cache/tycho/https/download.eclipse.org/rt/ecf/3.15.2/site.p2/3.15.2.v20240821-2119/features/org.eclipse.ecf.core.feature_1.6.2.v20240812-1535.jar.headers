@@ -1,0 +1,14 @@
+#Tue Oct 01 09:54:54 CEST 2024
+date=Tue, 01 Oct 2024 07\:53\:16 GMT
+content-length=23451
+server=nginx
+strict-transport-security=max-age\=63072000; includeSubDomains; preload
+last-modified=Wed, 21 Aug 2024 21\:33\:28 GMT
+FILE-LAST_UPDATED=1727769294706
+content-security-policy=frame-ancestors 'self'
+content-type=application/x-java-archive
+etag="5b9b-620384af861c5"
+\:status=200
+accept-ranges=bytes
+cache-control=private, max-age\=8m, no-transform
+HTTP_RESPONSE_CODE=200

@@ -1,0 +1,155 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.eclipse.cbi</groupId>
+  <artifactId>cbi-parent</artifactId>
+  <version>1.5.0</version>
+  <packaging>pom</packaging>
+
+  <url>https://wiki.eclipse.org/CBI</url>
+  <description>
+    The Eclipse Common Build Infrastructure (CBI) is an initiative
+    combining technologies and practices for building Eclipse Software.
+  </description>
+
+  <licenses>
+    <license>
+      <name>Eclipse Public License v2.0</name>
+      <url>https://www.eclipse.org/legal/epl-v20.html</url>
+      <distribution>repo</distribution>
+    </license>
+    <license>
+      <name>Eclipse Distribution License, Version 1.0</name>
+      <url>https://eclipse.org/org/documents/edl-v10.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <mailingLists>
+    <mailingList>
+      <name>cbi-dev</name>
+      <subscribe>https://dev.eclipse.org/mailman/listinfo/cbi-dev</subscribe>
+      <unsubscribe>https://dev.eclipse.org/mailman/listinfo/cbi-dev</unsubscribe>
+      <post>cbi-dev@eclipse.org</post>
+      <archive>https://dev.eclipse.org/mhonarc/lists/cbi-dev/</archive>
+    </mailingList>
+  </mailingLists>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/eclipse-cbi/org.eclipse.cbi/issues</url>
+  </issueManagement>
+
+  <organization>
+    <name>Eclipse Foundation</name>
+    <url>https://eclipse.org/</url>
+  </organization>
+
+  <scm>
+    <connection>scm:git:https://github.com/eclipse-cbi/org.eclipse.cbi.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:eclipse-cbi/org.eclipse.cbi.git</developerConnection>
+    <tag>main</tag>
+    <url>https://github.com/eclipse-cbi/org.eclipse.cbi</url>
+  </scm>
+
+  <modules>
+    <module>checkstyle</module>
+    <module>bom</module>
+    <module>build-parent</module>
+
+    <module>common</module>
+    <module>webservice</module>
+    <module>maven-plugins</module>
+  </modules>
+
+  <distributionManagement>
+    <repository>
+      <id>repo.eclipse.org</id>
+      <name>Eclipse CBI Repository - Releases</name>
+      <url>https://repo.eclipse.org/content/repositories/cbi-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>repo.eclipse.org</id>
+      <name>Eclipse CBI Repository - Snapshots</name>
+      <url>https://repo.eclipse.org/content/repositories/cbi-snapshots/</url>
+    </snapshotRepository>
+    <site>
+      <id>cbi-plugins.site</id>
+      <name>CBI Plugins Site</name>
+      <url>file:///${user.dir}/sitedocs</url>
+    </site>
+  </distributionManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <requireMavenVersion>3.6.3</requireMavenVersion>
+    <requireJavaVersion>17</requireJavaVersion>
+  </properties>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.12.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.4.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.6.2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-plugin-report-plugin</artifactId>
+          <version>3.13.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>3.5.0</version>
+        <executions>
+          <execution>
+            <id>cbi-enforcer-rules</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <version>${requireMavenVersion}</version>
+                </requireMavenVersion>
+                <requireJavaVersion>
+                  <version>${requireJavaVersion}</version>
+                </requireJavaVersion>
+                <requireNoRepositories/>
+                <requirePluginVersions/>
+                <reactorModuleConvergence/>
+                <banDuplicatePomDependencyVersions/>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

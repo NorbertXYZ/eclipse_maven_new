@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Oct 01 09:42:00 CEST 2024
+asm-commons-9.7-sources.jar>central=
+asm-commons-9.7.jar>central=
+asm-commons-9.7.pom>central=

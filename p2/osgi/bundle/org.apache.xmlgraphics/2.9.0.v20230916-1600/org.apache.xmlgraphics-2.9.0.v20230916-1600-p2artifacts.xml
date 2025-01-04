@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='org.apache.xmlgraphics' version='2.9.0.v20230916-1600'>
+    <properties size='7'>
+      <property name='maven-wrapped-groupId' value='org.apache.xmlgraphics'/>
+      <property name='maven-wrapped-artifactId' value='xmlgraphics-commons'/>
+      <property name='maven-wrapped-version' value='2.9'/>
+      <property name='download.size' value='729268'/>
+      <property name='artifact.size' value='729268'/>
+      <property name='download.checksum.sha-512' value='ba09fc02711eb546cf9a2dfe924db6485bd7c00beacde529d8369333bae74a046307883545db1ad2fa3c0c940f456838b9c83a8b71ff06aee5e50f1aa44ed1c4'/>
+      <property name='download.checksum.sha-256' value='d363b9b79214e745b3082c4e2fb6935554e1e045d9f2246eed416ed45da44f4e'/>
+    </properties>
+  </artifact>
+</artifacts>

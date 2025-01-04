@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Oct 01 09:35:24 CEST 2024
+org.ow2.sat4j.pb-2.3.6.jar>central=
+org.ow2.sat4j.pb-2.3.6-sources.jar>central=
+org.ow2.sat4j.pb-2.3.6.pom>central=

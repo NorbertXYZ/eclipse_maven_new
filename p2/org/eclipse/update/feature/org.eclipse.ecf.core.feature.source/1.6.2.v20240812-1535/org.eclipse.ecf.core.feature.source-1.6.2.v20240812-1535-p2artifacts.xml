@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.core.feature.source' version='1.6.2.v20240812-1535'>
+    <properties size='11'>
+      <property name='artifact.size' value='24755'/>
+      <property name='download.size' value='24755'/>
+      <property name='download.checksum.sha-512' value='d3c85bd47e310fca52000a372cdd5e1afe9ffb9149c7735217adcdff9727cf0914fbf6ee20db351b5d12f6258e2ec6abdb5f45b11b1d78c3c838f3c61cd4266b'/>
+      <property name='download.checksum.sha-1' value='e90142a397f1fdf5bb0e7e6a04b9662acd144d34'/>
+      <property name='download.checksum.sha-256' value='393d7723038e466416a1bbaf7795701c2e819da005a5f8d90603ce9d3df9dd61'/>
+      <property name='maven-groupId' value='org.eclipse.ecf'/>
+      <property name='maven-artifactId' value='org.eclipse.ecf.core.feature'/>
+      <property name='maven-version' value='1.6.2-SNAPSHOT'/>
+      <property name='maven-classifier' value='sources-feature'/>
+      <property name='maven-type' value='eclipse-feature'/>
+      <property name='download.contentType' value='application/zip'/>
+    </properties>
+  </artifact>
+</artifacts>

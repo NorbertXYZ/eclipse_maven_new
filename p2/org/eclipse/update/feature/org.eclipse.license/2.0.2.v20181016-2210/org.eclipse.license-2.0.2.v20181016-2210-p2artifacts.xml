@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='org.eclipse.update.feature' id='org.eclipse.license' version='2.0.2.v20181016-2210'>
+    <properties size='8'>
+      <property name='artifact.size' value='13361'/>
+      <property name='download.size' value='13361'/>
+      <property name='maven-groupId' value='org.eclipse.license'/>
+      <property name='maven-artifactId' value='org.eclipse.license'/>
+      <property name='maven-version' value='2.0.2-SNAPSHOT'/>
+      <property name='download.contentType' value='application/zip'/>
+      <property name='download.checksum.sha-512' value='e1fdb7b67b6956e339e3a0507f5d264509937e06bbd83f11d9034a9273ec56e8632b4fef1a72be37cb47e67f1953ec509ef35f6c2af69838ea253967ff18d95e'/>
+      <property name='download.checksum.sha-256' value='21a87a27db79cd010e47280a9a383dad00f9665ed1a9cb3e8e281701edc14f69'/>
+    </properties>
+  </artifact>
+</artifacts>
